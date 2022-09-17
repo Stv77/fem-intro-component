@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+    <div id="container">
+        <div id="content-text">
+            <h1 id="header">
+                Learn to code by watching others
+            </h1>
+            <p id="description">
+                See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
+            </p>
+        </div>
+        <div id="content-form">
+            <div id="trial">
+                <div id="trial-align">
+                    <a href="#" id="trial"><b>Try it free 7 days</b> then $20/mo. thereafter</a>
+                </div>
+            </div>
+            <form>
+                <!-- User Input -->
+                <div id="input">
+                    <input type="text" name="first-name" id="user-input" class="user-input" placeholder="First Name" minlength="1" maxlength="8" required>
+                </div>
+                <!-- Message -->
+                <div id="message">
+                    <p id="error-message" class="error-message">First Name cannot be empty</p>
+                </div>
+                <!-- User Input -->
+                <div id="input">
+                    <input type="text" name="last-name" id="user-input" class="user-input" placeholder="Last Name" minlength="1" maxlength="8" required>
+                </div>
+                <!-- Message -->
+                <div id="message">
+                    <p id="error-message" class="error-message">Last Name cannot be empty</p>
+                </div>
+                <!-- User Input -->
+                <div id="input">
+                    <input type="email" name="email" id="user-input" class="user-input" placeholder="Email Address" pattern="[a-ZA-Z0-9_.+-]+@[a-z0-9.-]+\.[a-zA-Z0-9-.]" required>
+                </div>
+                <!-- Message -->
+                <div id="message">
+                    <p id="error-message" class="error-message">Looks like this is not an email</p>
+                </div>
+                <!-- User Input -->
+                <div id="input">
+                    <input type="password" name="password" id="user-input" class="user-input" placeholder="Password" required>
+                </div>
+                <!-- Message -->
+                <div id="message">
+                    <p id="error-message" class="error-message">Password cannot be empty</p>
+                </div>
+                <div id="submit">
+                    <input type="submit" id="claim" value="Claim Your Free Trial">
+                </div>
+                <div id="terms">
+                    <p id="terms">By clicking the button, you are agreeing to our <b id="terms">Terms and Services</b></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
