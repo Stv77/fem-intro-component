@@ -45,7 +45,7 @@
                 </div>
                 <!-- User Input -->
                 <div id="input">
-                    <input type="email" name="email" id="user-input" class="user-input" placeholder="Email Address" pattern="[a-ZA-Z0-9_.+-]+@[a-z0-9.-]+\.[a-zA-Z0-9-.]" required>
+                    <input type="email" name="email" id="user-input" class="user-input" placeholder="Email Address" pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}" required>
                 </div>
                 <!-- Message -->
                 <div id="message">
@@ -60,7 +60,7 @@
                     <p id="error-message" class="error-message">Password cannot be empty</p>
                 </div>
                 <div id="submit">
-                    <input type="submit" id="claim" value="Claim Your Free Trial">
+                    <input type="submit" id="claim" value="Claim Your Free Trial" onclick="validity()">
                 </div>
                 <div id="terms">
                     <p id="terms">By clicking the button, you are agreeing to our <b id="terms">Terms and Services</b></p>
